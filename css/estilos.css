@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&display=swap');
+
+body {
+    font-family: 'Lora', serif;
+    margin: 30px;
+    position: relative;
+}
+
+.contenedor {
+    max-width: 860px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.cuadricula_2,
+.cuadricula_1 {
+    display: inline;
+    float: left;
+    position: relative;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.contenedor .cuadricula_2 {
+    width: 45%;
+    margin-right: 30px;
+}
+
+.contenedor .cuadricula_1 {
+    width: 98%;
+}
+
+/**********
+/* Encabezado
+**********/
+
+header {
+    background: #33a4c9;
+    border-bottom: 1px solid #848484;
+    padding: 19px 0;
+    overflow: hidden;
+}
+
+header figure {
+    float: left; 
+    width: 175px;
+    height: 175px;   
+}
+
+header figure img {
+    border-radius: 90px;
+    border: solid #fff;
+    height: 175px;
+    width: 175px;
+    position: relative;
+}
+
+header hgroup {
+    float: right;
+    text-align: center;
+}
+
+header hgroup h1 {
+    color: #fff;
+    font: 400 40px ;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+}
+
+header hgroup h2 {
+    color: #fff;
+    font-style: italic;
+    font: 400 20px;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+}
+
+#cv {
+    width: 45px;
+    height: 55px;
+}
+
+/***************
+/* Página Principal
+***************/
+
+p strong{
+    font: 400 20px;
+}
+
+section[role="main"] {
+    padding: 21px 0;
+    overflow: hidden;
+}
+
+section[role="main"]>div {
+    margin-top: 63px;
+}
+
+section[role="main"] h3 {
+    border-bottom: 1px solid #bdbdbd;
+    padding: 0 0 20px 60px;
+    margin-top: 0px;
+    position: relative;
+    font: 400 20px ;
+}
+
+.icono {
+    display: block;
+    height: 50px;
+    left: 0;
+    position: absolute;
+    top: -10px;
+    width: 50px;
+}
+
+.experiencias ul,
+.formaciones ul {
+    margin-left: 60px;
+    padding: 0px;
+}
+
+section[role="main"] h4 {
+    margin-bottom: 0px;
+}
+
+section[role="main"] h4 strong {
+    color: #147393;
+    font-weight: normal;
+    font: 400 17px ;
+}
+
+.experiencias li,
+.formaciones li {
+    margin-bottom: 35px;
+    list-style: none;
+}
+
+/**************
+/* conocimientos 
+***************/
+
+.conocimientos .values {
+    padding: 0px;
+}
+
+.conocimientos .values li {
+    margin-bottom: 21px;
+    position: relative;
+    list-style: none;
+    font: 400 14px;
+}
+
+.conocimientos .values li:after {
+    background: #e1e1e1;
+    bottom: -4px;
+    content: " ";
+    display: block;
+    height: 5px;
+    position: absolute;
+    width: 100%;
+}
+
+.conocimientos .values li span {
+    background: #33a4c9;
+    bottom: -4px;
+    content: " ";
+    display: block;
+    height: 5px;
+    left: 0;
+    position: absolute;
+    width: inherit;
+    z-index: 1;
+}
+
+.cuadricula_2 ul {
+    padding: 15px;
+}
+
+.cuadricula_2 ul li {
+    font: 400 15px ;
+    margin-bottom: 3px;
+    list-style: none;
+}
+
+.cuadricula_2 .informacion li:before,
+.cuadricula_2 .contacto li:before {
+    font: 400 15px ;
+    margin-bottom: 3px;
+    display: block;
+    position: relative;
+    max-width: 0;
+    max-height: 0;
+    left: -15px;
+    top: 0;
+    color: #33a4c9;
+    font-size: 20px;
+}
+
+.cuadricula_1 .lugar {
+    background-position: 0 -2px;
+    color: #848484;
+    font: 400 15px ;
+}
+
+.fecha {
+    background-position: 0 -22px;
+    color: #999;
+    font: 400 15px ;
+}
+
+
+
+.redes1 {
+    width: 40px;
+    height: 40px;
+    margin: 10px 38px 25px 38px;
+}
+
+.formacion1 {
+    float: left;
+}
+
+.formacion2 {
+    float: right;
+}
+
