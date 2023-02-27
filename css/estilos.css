@@ -1,57 +1,82 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&display=swap');
+/**@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&display=swap');**/
 
-body {
-    font-family: 'Lora', serif;
-    margin: 30px;
+.body {
+    margin-left: 120px;
     position: relative;
+}
+
+
+.bandera {
+    margin-top: 25px;
+    margin-left: 55px;
+    margin-right: 55px;
+    font-weight: bold;
 }
 
 .contenedor {
-    max-width: 860px;
+    margin-top: 50px;
+
+}
+
+.encabezado {
+    max-width: 860px;   
     width: 80%;
     margin: 0 auto;
+
 }
 
-.cuadricula_2,
-.cuadricula_1 {
-    display: inline;
+.presentacion,
+.conocimientos,
+.formaciones,
+.experiencias,
+.informacion {
+    display:inline;
     float: left;
     position: relative;
-    margin-left: 1%;
-    margin-right: 1%;
+    margin-left: 6%;
+    margin-right: 6%;
 }
 
-.contenedor .cuadricula_2 {
-    width: 45%;
-    margin-right: 30px;
+.presentacion,
+.conocimientos,
+.experiencias,
+.informacion {
+    width: 40%;
+    margin-right: 20px;
 }
 
-.contenedor .cuadricula_1 {
-    width: 98%;
+.contacto {
+    width: 40%;
+    margin-left: 20px;
 }
 
-/**********
-/* Encabezado
-**********/
+.formaciones,
+.experiencias {
+    width: 88%;
+}
+
+/************* 
+Encabezado
+**************/
 
 header {
     background: #33a4c9;
-    border-bottom: 1px solid #848484;
-    padding: 19px 0;
+    border-bottom: 10px solid #848484;
+    padding: 19px 10px;
     overflow: hidden;
 }
 
 header figure {
     float: left; 
-    width: 175px;
-    height: 175px;   
+    width: 185px;
+    height: 185px;   
 }
 
 header figure img {
-    border-radius: 90px;
-    border: solid #fff;
-    height: 175px;
-    width: 175px;
+    border-radius: 120px;
+    border: solid #33a4c9;
+    height: 185px;
+    width: 185px;
     position: relative;
 }
 
@@ -74,15 +99,16 @@ header hgroup h2 {
 }
 
 #cv {
-    width: 45px;
+    width: 55px;
     height: 55px;
 }
 
 /***************
-/* Página Principal
+/* Sección Principal
 ***************/
 
 p strong{
+    font-weight: bold;
     font: 400 20px;
 }
 
@@ -92,11 +118,11 @@ section[role="main"] {
 }
 
 section[role="main"]>div {
-    margin-top: 63px;
+    margin-top: 73px;
 }
 
 section[role="main"] h3 {
-    border-bottom: 1px solid #bdbdbd;
+    border-bottom: 1px solid #202020;
     padding: 0 0 20px 60px;
     margin-top: 0px;
     position: relative;
@@ -112,8 +138,10 @@ section[role="main"] h3 {
     width: 50px;
 }
 
-.experiencias ul,
-.formaciones ul {
+
+.formaciones ul,
+.experiencias ul
+.informacion ul {
     margin-left: 60px;
     padding: 0px;
 }
@@ -128,61 +156,48 @@ section[role="main"] h4 strong {
     font: 400 17px ;
 }
 
+.formaciones li,
 .experiencias li,
-.formaciones li {
+.informacion li {
     margin-bottom: 35px;
-    list-style: none;
+    list-style:  none;
 }
 
-/**************
-/* conocimientos 
-***************/
-
-.conocimientos .values {
-    padding: 0px;
+.conocimientos 
+.informacion
+.contacto
+.values {
+    padding: 10px;
 }
 
-.conocimientos .values li {
-    margin-bottom: 21px;
-    position: relative;
-    list-style: none;
-    font: 400 14px;
+.presentacion ul,
+.conocimientos ul,
+.informacion ul,
+.contacto ul {
+    padding: 25px;
 }
 
-.conocimientos .values li:after {
-    background: #e1e1e1;
-    bottom: -4px;
-    content: " ";
-    display: block;
-    height: 5px;
-    position: absolute;
-    width: 100%;
-}
-
-.conocimientos .values li span {
-    background: #33a4c9;
-    bottom: -4px;
-    content: " ";
-    display: block;
-    height: 5px;
-    left: 0;
-    position: absolute;
-    width: inherit;
-    z-index: 1;
-}
-
-.cuadricula_2 ul {
-    padding: 15px;
-}
-
-.cuadricula_2 ul li {
+.presentacion ul li,
+.conocimientos ul li,
+.contacto ul li,
+.informacion ul li {
     font: 400 15px ;
     margin-bottom: 3px;
     list-style: none;
 }
 
-.cuadricula_2 .informacion li:before,
-.cuadricula_2 .contacto li:before {
+.contacto {
+    display: inline;
+    float: left;
+    position: relative;
+    margin-left: 6%;
+    margin-right: 6%;
+}
+
+.presentacion li:before,
+.conocimientos li:before,
+.informacion li:before,
+.contacto li:before {
     font: 400 15px ;
     margin-bottom: 3px;
     display: block;
@@ -195,19 +210,15 @@ section[role="main"] h4 strong {
     font-size: 20px;
 }
 
-.cuadricula_1 .lugar {
+.formaciones,
+.experiencias,
+.informacion,
+.lugar,
+.contacto,
+.fecha{
     background-position: 0 -2px;
-    color: #848484;
-    font: 400 15px ;
+    color: #202020;
 }
-
-.fecha {
-    background-position: 0 -22px;
-    color: #999;
-    font: 400 15px ;
-}
-
-
 
 .redes1 {
     width: 40px;
@@ -215,11 +226,39 @@ section[role="main"] h4 strong {
     margin: 10px 38px 25px 38px;
 }
 
-.formacion1 {
+.trabajos_1 {
     float: left;
 }
 
-.formacion2 {
+.trabajos_2 {
+    margin-right: 109px;
     float: right;
+}
+
+.formacion_1 {
+    border-radius: 0%;
+    float: left;
+}
+
+.formacion_2 {
+    margin-right: 85px;
+    float: right;
+}
+
+
+
+/**
+Pie de pagina
+**/
+
+.footer{
+    display:block;
+    align-content: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 40%;
+    margin-right: 40%;
+    color: #202020;
+    font: 400 15px;
 }
 

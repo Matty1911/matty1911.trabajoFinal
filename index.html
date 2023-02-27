@@ -5,20 +5,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Curriculum Vitae</title>
     <link rel="stylesheet" type="text/css" href="css/estilos.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="estilos.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="estilos.css" media="print">
+    <!--<link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&display=swap" 
+    rel="stylesheet"> -->
+    <!--<link rel="stylesheet" href="https://kit.fontawesome.com/7b343749df.css" crossorigin="anonymous"> -->
 
 </head>
 
 <body>
+    <!--
+    <button type="button" id="boton_color"> Crear tu propio CV</button>
+    <button type="button" id="boton_print"> Descarga tu CV</button>
+    -->
+    <script src="js/function.js"></script>
+    
 
     <!-- Encabezado página -->
     <header class="bandera">
-        <div class="contenedor">
+        <div class="encabezado">
             <figure>
                 <img id="fotoPerfil" src="https://randomuser.me/api/portraits/men/7.jpg" alt="Curtis Simmons">
             </figure>
@@ -27,81 +39,51 @@
                 <h2>Curriculum Vitae</h2>
                 <img id="cv"
                     src="https://cdn2.iconfinder.com/data/icons/business-and-finance-375/30/resume_business_cv_work_job_curriculum-_31-48.png"
-                    alt="cv">
+                    alt="cv"
+                >
+                
             </hgroup>
         </div>
     </header>
-
     <!-- Seccion principal -->
     <section role="main" class="contenedor">
-        <div class="cuadricula_1">
-            <!-- Sobre mi -->
-            <div class="cuadricula_2">
-                <img class="icono"
-                    src="https://cdn0.iconfinder.com/data/icons/phosphor-fill-vol-4/256/student-fill-48.png " alt="yo">
-                <h3>Sobre mi:</h3>
-                <li>Nombre completo: Simmons Curtis</li>
-                <li>Edad: </li>
-                <li>Fecha de Nac.: 2/3/1965</li>
-                <li></li>
-                <p>Si estas interesado en desarrollar una aplicación web o movil no dudes en
-                    contactarte conmigo, ya seas una empresa o un profesional. Sin dudas pondremos
-                    en marcha el proyecto que tengas en mente.</p>
-                <p></p>
-            </div>
-            <!-- Conocimientos -->
-            <div class="cuadricula_2 conocimientos">
-                <img class="icono"
-                    src="https://cdn2.iconfinder.com/data/icons/essential-web-3/50/customer-experience-state-mind-human-48.png"
-                    alt="estudios">
-                <h3>Conocimientos</h3>
-                <ul>
-                    <li>HTML5<span style="width: 90%;"></span></li>
-                    <li>CSS3<span style="width: 85%;"></span></li>
-                    <li>Javascript<span style="width: 80%;"></span></li>
-                    <li>jQuery<span style="width: 80%;"></span></li>
-                    <li>Android KitKat SDK<span style="width: 95%;"></span></li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- Experiencias -->
-        <div class="cuadricula_1 experiencias">
+        <!-- Sobre mi -->
+        <div class="presentacion">
             <img class="icono"
-                src="https://cdn0.iconfinder.com/data/icons/web-development-and-studio/512/78_Skills_Abilities_employee_human_man_people-48.png"
-                alt="habilidades">
-            <h3>Experiencias</h3>
-            <ul>
-                <li>
-                    <h4><strong>Programador Web</strong></h4>
-                    <span class="lugar">Freelance.</span>
-                    <span class="fecha">2017-Actualmente</span>
-                    <p>Desarrollo de aplicaciones/páginas web y dispositivos móviles.</p>
-                </li>
-                <li>
-                    <h4><strong>Analista / Programador Web</strong></h4>
-                    <span class="lugar">El Ave Fenix.</span>
-                    <span class="fecha">2010-2014</span>
-                    <p>Analista programador en distintos proyectos .Net para varias adminsitraciones del gobierno local.
-                    </p>
-                </li>
-                <li>
-                    <h4><strong>Analista / Programador Web</strong></h4>
-                    <span class="lugar">Sistemas COPAM.</span>
-                    <span class="fecha">2014-2016</span>
-                    <p>Analista programador en distintos proyectos .Net para varias adminsitraciones del gobierno local
-                        realizando labores de desarrollo y mantenimiento de aplicaciones.</p>
-                </li>
-            </ul>
+                src="https://cdn0.iconfinder.com/data/icons/phosphor-fill-vol-4/256/student-fill-48.png " 
+                alt="yo">
+            <h3>Sobre mi:</h3>
+            <li><strong> Nombre completo: </strong> Simmons Curtis</li>
+            <li><strong> Edad:</strong> 38 </li>
+            <li><strong> Fecha de Nac.:</strong> 2/3/1985</li>
+            <li><strong> DNI:</strong> 30.852.852</li>
+            <li><strong> Lugar de nacimiento:</strong> San Salvador de Jujuy</li>
+            <li><strong> Domicilio Actual:</strong> Avenida Rademacher 1625</li>
+            <li><strong> Localidad:</strong> Posadas, Misiones</li>
+            <li><strong> Estado Civil:</strong> Casado</li>
         </div>
-
+        <!-- Conocimientos -->
+        <div>
+            <div class="conocimientos">
+            <img class="icono"
+                src="https://cdn2.iconfinder.com/data/icons/essential-web-3/50/customer-experience-state-mind-human-48.png"
+                alt="estudios">
+            <h3>Conocimientos</h3>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>Javascript</li>
+            <li>Java con Netbeans</li>
+            <li>jQuery</li>
+            <li>Android KitKat SDK</span></li>
+            </div>
+        </div>
         <!-- Formaciones -->
-        <div class="cuadricula_1 formaciones">
+        <div class="formaciones">
             <img class="icono"
                 src="https://cdn2.iconfinder.com/data/icons/knowledge-promotion-3/64/graduation_academy_grad_education_graduate_university-48.png"
                 alt="formacion">
             <h3>Formación academica</h3>
-            <div class="formacion1">
+            <div class="formacion_1">
                 <ul>
                     <li>
                         <h4><strong>Curso de diseño web con CSS3</strong></h4>
@@ -115,7 +97,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="formacion2">
+            <div class="formacion_2">
                 <ul>
                     <li>
                         <h4><strong>Curso de Seguridad Web</strong></h4>
@@ -130,49 +112,89 @@
                 </ul>
             </div>
         </div>
-
-        <!-- Redes Sociales -->
-        <div class="cuadricula_2 contacto">
-            <img class="icono" src="https://cdn4.iconfinder.com/data/icons/evil-icons-user-interface/64/share-48.png"
-                alt="redesSociales">
-            <h3>Redes sociales - Contacto</h3>
-            <div>
-                <a href="Gmail"><img class="redes1"
-                        src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/112-gmail_email_mail-48.png"
-                        alt="gmail">
-                </a>
-                <a href="Facebook"><img class="redes1"
-                        src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/83-facebook-48.png"
-                        alt="Facebook">
-                </a>
-                <a href="WhatsApp"><img class="redes1"
-                        src="https://cdn3.iconfinder.com/data/icons/2018-social-media-logotypes/1000/2018_social_media_popular_app_logo-whatsapp-48.png"
-                        alt="whatsapp">
-                </a>
-                <a href="LinkedIn"><img class="redes1"
-                        src="https://cdn2.iconfinder.com/data/icons/social-media-applications/64/social_media_applications_14-linkedin-48.png"
-                        alt="Linkedin">
-                </a>
+        <!-- Experiencias -->
+        <div class="experiencias">
+            <img class="icono"
+                src="https://cdn0.iconfinder.com/data/icons/web-development-and-studio/512/78_Skills_Abilities_employee_human_man_people-48.png"
+                alt="habilidades">
+            <h3>Experiencia Laboral</h3>
+            <div class="trabajos_1">
+                <ul>
+                    <li>
+                        <h4><strong>Programador Web</strong></h4>
+                        <span class="lugar">Freelance.</span>
+                        <span class="fecha">2017-Actualmente</span>
+                        <p>Desarrollo de aplicaciones, páginas web para dispositivos moviles. </p>
+                    </li>
+                    <li>
+                        <h4><strong>Analista / Programador Web</strong></h4>
+                        <span class="lugar">El Ave Fenix.</span>
+                        <span class="fecha">2010-2014</span>
+                        <p>Analista programador en distintos proyectos .Net </p>
+                        <p> para varias adminsitracionesdel gobierno local.</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="trabajos_2">
+                <ul>
+                    <li>
+                        <h4><strong>Analista / Programador Web</strong></h4>
+                        <span class="lugar">Sistemas COPAM.</span>
+                        <span class="fecha">2014-2016</span>
+                        <p>Analista programador en distintos proyectos .Net para</p>
+                        <p> varias adminsitraciones del gobierno local realizando</p>
+                        <p> labores de desarrollo y mantenimiento de aplicaciones.</p>
+                    </li>
+                    <li>
+                        <h4><strong>Administrador de bases de datos</strong></h4>
+                        <span class="lugar">Transporte y Logística CSD</span>
+                        <span class="fecha">2016-2021</span>
+                        <p>Gestión y mantenimiento de la base de datos de esta </p>
+                        <p> empresa en gestion remota.</p>
+                    </li>
+                </ul>
             </div>
         </div>
         <!-- Informacion Adicional -->
-        <div class="cuadricula_2 informacion">
+        <div class="informacion">
             <img class="icono" src="https://cdn2.iconfinder.com/data/icons/picol-vector/32/user_full_information-48.png"
                 alt="icono informacion">
-            <h3>Otros Datos</h3>
-            <ul class="informacion">
-                <li>Ingles nivel medio</li>
-                <li>Facilidad de adaptación y trabajo en equipo</li>
-                <li>Aprendizaje rápido en nuevas tecnologias</li>
-            </ul>
+            <h3>Datos complementarios</h3>
+            <li>Ingles nivel medio</li>
+            <li>Facilidad de adaptación y trabajo en equipo</li>
+            <li>Aprendizaje rápido en nuevas tecnologias</li>
         </div>
-
+        <!-- Redes Sociales -->
+        <div class="contacto">
+            <img class="icono" src="https://cdn4.iconfinder.com/data/icons/evil-icons-user-interface/64/share-48.png"
+                alt="redesSociales">
+            <h3>Información de contacto</h3>
+            <div>
+                <a href="Gmail"><img class="redes1"
+                    src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/112-gmail_email_mail-48.png"
+                    alt="gmail">
+                </a>
+                <a href="Facebook"><img class="redes1"
+                    src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/83-facebook-48.png"
+                    alt="Facebook">
+                </a>
+                <a href="WhatsApp"><img class="redes1"
+                    src="https://cdn3.iconfinder.com/data/icons/2018-social-media-logotypes/1000/2018_social_media_popular_app_logo-whatsapp-48.png"
+                    alt="whatsapp">
+                </a>
+                <a href="LinkedIn"><img class="redes1"
+                    src="https://cdn2.iconfinder.com/data/icons/social-media-applications/64/social_media_applications_14-linkedin-48.png"
+                    alt="Linkedin">
+                </a>
+            </div>
+        </div>
     </section>
-
-
-
-    <script src="js/function.js"></script>
-
+    <!-- Pie de Página -->
+    <div class="footer">
+        <p>
+            Desarrollado por
+            <a href="https://github.com/Matty1911">@Matty1911</a>
+        </p>
+    </div>
 </body>
-
 </html>
